@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DoctorController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="check bed detail">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #7F8C8D;">
+                           <children>
+                              <Button fx:id="nextPage" layoutX="131.0" layoutY="145.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="97.0" prefWidth="320.0" text="Click here">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Button>
+                              <Label layoutX="22.0" layoutY="55.0" prefHeight="71.0" prefWidth="568.0" text="please click on below button for checking the detail of a resident in a bed">
+                                 <font>
+                                    <Font name="Arial Black" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="475.0" layoutY="8.0" prefHeight="47.0" prefWidth="105.0">
+                                 <children>
+                                    <Button fx:id="logout" layoutX="13.0" layoutY="11.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="83.0" text="Log out" />
+                                 </children>
+                              </Pane>
+                              <Label fx:id="welcome" layoutX="8.0" layoutY="8.0" prefHeight="32.0" prefWidth="339.0">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="12.0" />
+                                 </font>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0" startX="0.5452380952380953" startY="0.4023809523809524">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="0.11988303810358047" green="0.49901315569877625" blue="0.8092105388641357" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="move resident">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #95A5A6;">
+                           <children>
+                              <Label layoutX="33.0" layoutY="57.0" prefHeight="57.0" prefWidth="535.0" text="please click on below button for moving a resident to a different bed">
+                                 <font>
+                                    <Font name="Arial Black" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="clickhere" layoutX="129.0" layoutY="142.0" mnemonicParsing="false" onAction="#clickhere" prefHeight="99.0" prefWidth="324.0" text="Click here">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font></Button>
+                              <Label fx:id="message" contentDisplay="CENTER" layoutX="210.0" layoutY="105.0" prefHeight="17.0" prefWidth="162.0" textFill="#be2f2f" textOverrun="CENTER_ELLIPSIS" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                <Tab text="attach a new prescription">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #C0C0C0;">
+                           <children>
+                              <Label layoutX="60.0" layoutY="63.0" prefHeight="44.0" prefWidth="481.0" text="please click on below button for attaching a new prescription">
+                                 <font>
+                                    <Font name="Arial Black" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="Forprescription" layoutX="127.0" layoutY="144.0" mnemonicParsing="false" onAction="#Forprescription" prefHeight="97.0" prefWidth="327.0" text="Click here">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="update prescription">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #E0FFFF;">
+                           <children>
+                              <Label layoutX="88.0" layoutY="67.0" prefHeight="49.0" prefWidth="448.0" text="please click on below button for update prescription">
+                                 <font>
+                                    <Font name="Arial Black" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="update" layoutX="150.0" layoutY="152.0" mnemonicParsing="false" onAction="#update" prefHeight="85.0" prefWidth="304.0" text="Click here">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="administer a prescription">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #E6E6FA;">
+                           <children>
+                              <Label layoutX="79.0" layoutY="77.0" prefHeight="24.0" prefWidth="478.0" text="please click on below button for administer prescription">
+                                 <font>
+                                    <Font name="Arial Black" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="giveMedicine" layoutX="162.0" layoutY="150.0" mnemonicParsing="false" onAction="#giveMedicine" prefHeight="82.0" prefWidth="290.0" text="Click here">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="givemedicineMessage" layoutX="228.0" layoutY="113.0" prefHeight="17.0" prefWidth="196.0" textFill="#d71a1a" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

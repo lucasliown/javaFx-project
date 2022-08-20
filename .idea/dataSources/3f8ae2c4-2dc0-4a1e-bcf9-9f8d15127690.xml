@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="CareHomeDB">
+  <database-model serializer="dbm" dbms="HSQLDB" family-id="HSQLDB" format-version="4.20">
+    <root id="1">
+      <ServerVersion>2.4.0</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="PUBLIC">
+      <Current>1</Current>
+    </database>
+    <schema id="3" parent="2" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="2" name="PUBLIC">
+      <Current>1</Current>
+    </schema>
+    <schema id="5" parent="2" name="SYSTEM_LOBS"/>
+    <table id="6" parent="4" name="BED"/>
+    <table id="7" parent="4" name="DOCTOR"/>
+    <table id="8" parent="4" name="DOCTORSHIFT"/>
+    <table id="9" parent="4" name="LOG"/>
+    <table id="10" parent="4" name="MANAGER"/>
+    <table id="11" parent="4" name="MEDICINE"/>
+    <table id="12" parent="4" name="NURSE"/>
+    <table id="13" parent="4" name="NURSESHIFT"/>
+    <table id="14" parent="4" name="PRESCRIPTION"/>
+    <table id="15" parent="4" name="RESIDENT"/>
+    <table id="16" parent="4" name="ROOM"/>
+    <table id="17" parent="4" name="WARD"/>
+    <column id="18" parent="6" name="BEDID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="19" parent="6" name="BEDSTATUS">
+      <Position>2</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="20" parent="6" name="RESIDENTID">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="21" parent="7" name="DOCTORID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="22" parent="7" name="USERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="23" parent="7" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="24" parent="8" name="SHIFTID">
+      <Position>1</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="25" parent="8" name="SHIFTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(80)|12s</DataType>
+    </column>
+    <column id="26" parent="8" name="STAFFID">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="27" parent="9" name="LOGDETAIL">
+      <Position>1</Position>
+      <DataType>VARCHAR(2000)|12s</DataType>
+    </column>
+    <column id="28" parent="9" name="RESIDENTID">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="29" parent="10" name="MANAGERID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="30" parent="10" name="USERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="31" parent="10" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="32" parent="11" name="MEDICINEID">
+      <Position>1</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="33" parent="11" name="MEDICINENAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(60)|12s</DataType>
+    </column>
+    <column id="34" parent="11" name="MEDICINEDOSAGE">
+      <Position>3</Position>
+      <DataType>VARCHAR(30)|12s</DataType>
+    </column>
+    <column id="35" parent="11" name="PRESCRIPTIONID">
+      <Position>4</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="36" parent="12" name="NURSEID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="37" parent="12" name="USERNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="38" parent="12" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="39" parent="13" name="SHIFTID">
+      <Position>1</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="40" parent="13" name="SHIFTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(80)|12s</DataType>
+    </column>
+    <column id="41" parent="13" name="STAFFID">
+      <Position>3</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="42" parent="14" name="PRESCRIPTIONID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="43" parent="14" name="PRESCRIPTIONNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(80)|12s</DataType>
+    </column>
+    <column id="44" parent="14" name="DATETIME">
+      <Position>3</Position>
+      <DataType>VARCHAR(80)|12s</DataType>
+    </column>
+    <column id="45" parent="14" name="REASON">
+      <Position>4</Position>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="46" parent="14" name="MEDICINEID">
+      <Position>5</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="47" parent="14" name="DOCTORID">
+      <Position>6</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="48" parent="14" name="RESIDENTID">
+      <Position>7</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="49" parent="15" name="RESIDENTID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="50" parent="15" name="RESIDENTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="51" parent="15" name="ADMITTED">
+      <Position>3</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="52" parent="15" name="DISCHARGED">
+      <Position>4</Position>
+      <DataType>VARCHAR(45)|12s</DataType>
+    </column>
+    <column id="53" parent="15" name="PRESCRIPTION">
+      <Position>5</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="54" parent="15" name="BEDID">
+      <Position>6</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="55" parent="16" name="ROOMID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="56" parent="16" name="BEDID">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="57" parent="17" name="WARDID">
+      <Position>1</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+    <column id="58" parent="17" name="ROOMID">
+      <Position>2</Position>
+      <DataType>INTEGER|4s</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1175.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GiveNewPrescriptionController">
+   <left>
+      <AnchorPane prefHeight="800.0" prefWidth="392.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="26.0" layoutY="22.0" text="ward No.1" />
+            <Region layoutX="22.0" layoutY="74.0" prefHeight="149.0" prefWidth="154.0" style="-fx-background-color: #808080;" />
+            <Button fx:id="B601" layoutX="61.0" layoutY="136.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Region layoutX="196.0" layoutY="74.0" prefHeight="149.0" prefWidth="165.0" style="-fx-background-color: #808080;" />
+            <Region layoutX="22.0" layoutY="289.0" prefHeight="149.0" prefWidth="156.0" style="-fx-background-color: #808080;" />
+            <Region layoutX="196.0" layoutY="289.0" prefHeight="149.0" prefWidth="167.0" style="-fx-background-color: #808080;" />
+            <Region layoutX="22.0" layoutY="498.0" prefHeight="149.0" prefWidth="156.0" style="-fx-background-color: #808080;" />
+            <Region layoutX="196.0" layoutY="498.0" prefHeight="149.0" prefWidth="171.0" style="-fx-background-color: #808080;" />
+            <Button fx:id="B602" layoutX="241.0" layoutY="111.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B603" layoutX="241.0" layoutY="161.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B604" layoutX="28.0" layoutY="324.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B607" layoutX="101.0" layoutY="376.0" mnemonicParsing="false" onAction="#bed" text="bed No.4" textFill="#171717" />
+            <Button fx:id="B605" layoutX="28.0" layoutY="376.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B608" layoutX="205.0" layoutY="323.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B606" layoutX="101.0" layoutY="323.0" mnemonicParsing="false" onAction="#bed" text="bed No.3" textFill="#171717" />
+            <Button fx:id="B609" layoutX="205.0" layoutY="376.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B610" layoutX="276.0" layoutY="323.0" mnemonicParsing="false" onAction="#bed" text="bed No.3" textFill="#171717" />
+            <Button fx:id="B613" layoutX="23.0" layoutY="586.0" mnemonicParsing="false" onAction="#bed" prefHeight="25.0" prefWidth="68.0" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B611" layoutX="276.0" layoutY="376.0" mnemonicParsing="false" onAction="#bed" text="bed No.4" textFill="#171717" />
+            <Button fx:id="B614" layoutX="101.0" layoutY="536.0" mnemonicParsing="false" onAction="#bed" text="bed No.3" textFill="#171717" />
+            <Button fx:id="B612" layoutX="25.0" layoutY="536.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B615" layoutX="101.0" layoutY="586.0" mnemonicParsing="false" onAction="#bed" text="bed No.4" textFill="#171717" />
+            <Button fx:id="B616" layoutX="202.0" layoutY="536.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B618" layoutX="277.0" layoutY="536.0" mnemonicParsing="false" onAction="#bed" prefHeight="25.0" prefWidth="75.0" text="bed No.3" textFill="#171717" />
+            <Button fx:id="B617" layoutX="202.0" layoutY="586.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B619" layoutX="278.0" layoutY="586.0" mnemonicParsing="false" onAction="#bed" prefHeight="25.0" prefWidth="74.0" text="bed No.4" textFill="#171717" />
+            <Label layoutX="28.0" layoutY="84.0" text="Room No.1" />
+            <Label layoutX="209.0" layoutY="84.0" text="Room No.2" />
+            <Label layoutX="28.0" layoutY="300.0" text="Room No.3" />
+            <Label layoutX="209.0" layoutY="300.0" text="Room No.4" />
+            <Label layoutX="28.0" layoutY="507.0" text="Room No.5" />
+            <Label layoutX="209.0" layoutY="507.0" text="Room No.6" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="800.0" prefWidth="407.0" style="-fx-background-color: #C0C0C0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="31.0" layoutY="21.0" text="ward No.2" />
+            <Region layoutX="41.0" layoutY="72.0" prefHeight="149.0" prefWidth="167.0" style="-fx-background-color: #808080;" />
+            <Button fx:id="B620" layoutX="86.0" layoutY="134.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Region layoutX="227.0" layoutY="72.0" prefHeight="149.0" prefWidth="166.0" style="-fx-background-color: #808080;" />
+            <Button fx:id="B621" layoutX="272.0" layoutY="109.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B622" layoutX="271.0" layoutY="159.0" mnemonicParsing="false" onAction="#bed" prefHeight="25.0" prefWidth="69.0" text="bed No.2" textFill="#171717" />
+            <Label layoutX="56.0" layoutY="84.0" text="Room No.7" />
+            <Label layoutX="239.0" layoutY="84.0" text="Room No.8" />
+            <Region layoutX="45.0" layoutY="291.0" prefHeight="149.0" prefWidth="165.0" style="-fx-background-color: #808080;" />
+            <Region layoutX="228.0" layoutY="291.0" prefHeight="149.0" prefWidth="167.0" style="-fx-background-color: #808080;" />
+            <Region layoutX="45.0" layoutY="497.0" prefHeight="149.0" prefWidth="168.0" style="-fx-background-color: #808080;" />
+            <Region layoutX="228.0" layoutY="497.0" prefHeight="149.0" prefWidth="171.0" style="-fx-background-color: #808080;" />
+            <Button fx:id="B623" layoutX="50.0" layoutY="323.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B624" layoutX="50.0" layoutY="375.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B626" layoutX="134.0" layoutY="375.0" mnemonicParsing="false" onAction="#bed" text="bed No.4" textFill="#171717" />
+            <Button fx:id="B625" layoutX="134.0" layoutY="323.0" mnemonicParsing="false" onAction="#bed" text="bed No.3" textFill="#171717" />
+            <Button fx:id="B627" layoutX="233.0" layoutY="323.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B628" layoutX="233.0" layoutY="375.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B629" layoutX="314.0" layoutY="323.0" mnemonicParsing="false" onAction="#bed" text="bed No.3" textFill="#171717" />
+            <Button fx:id="B630" layoutX="314.0" layoutY="375.0" mnemonicParsing="false" onAction="#bed" text="bed No.4" textFill="#171717" />
+            <Button fx:id="B631" layoutX="50.0" layoutY="532.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B632" layoutX="50.0" layoutY="581.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B633" layoutX="134.0" layoutY="532.0" mnemonicParsing="false" onAction="#bed" text="bed No.3" textFill="#171717" />
+            <Button fx:id="B634" layoutX="134.0" layoutY="581.0" mnemonicParsing="false" onAction="#bed" text="bed No.4" textFill="#171717" />
+            <Button fx:id="B635" layoutX="233.0" layoutY="532.0" mnemonicParsing="false" onAction="#bed" text="bed No.1" textFill="#171717" />
+            <Button fx:id="B636" layoutX="233.0" layoutY="581.0" mnemonicParsing="false" onAction="#bed" text="bed No.2" textFill="#171717" />
+            <Button fx:id="B638" layoutX="313.0" layoutY="581.0" mnemonicParsing="false" onAction="#bed" text="bed No.4" textFill="#171717" />
+            <Button fx:id="B637" layoutX="314.0" layoutY="532.0" mnemonicParsing="false" onAction="#bed" text="bed No.3" textFill="#171717" />
+            <Label layoutX="56.0" layoutY="299.0" text="Room No.9" />
+            <Label layoutX="239.0" layoutY="299.0" text="Room No.10" />
+            <Label layoutX="56.0" layoutY="507.0" text="Room No.11" />
+            <Label layoutX="239.0" layoutY="507.0" text="Room No.12" />
+            <Button fx:id="exitthispage" layoutX="72.0" layoutY="691.0" mnemonicParsing="false" onAction="#exitthispag" prefHeight="66.0" prefWidth="307.0" text="exit this page" textFill="#171717" />
+            <AnchorPane layoutX="415.0" layoutY="1.0" prefHeight="800.0" prefWidth="372.0" style="-fx-background-color: AliceBlue;">
+               <children>
+                  <Label layoutX="38.0" layoutY="14.0" prefHeight="62.0" prefWidth="328.0" text="  Please enter new prescription">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.04439999908208847" green="0.24910394847393036" blue="0.7400000095367432" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.10949999839067459" green="0.29565000534057617" blue="0.7300000190734863" opacity="0.26247289776802063" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Modern No. 20" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="prescriptionID" layoutX="147.0" layoutY="109.0" />
+                  <Label layoutX="42.0" layoutY="113.0" text="Prescription ID:" />
+                  <TableView fx:id="medcineList" layoutX="37.0" layoutY="220.0" prefHeight="221.0" prefWidth="288.0">
+                    <columns>
+                      <TableColumn fx:id="medicineIDTable" prefWidth="79.0" text="Medicine ID" />
+                      <TableColumn fx:id="medicineNameTable" prefWidth="119.0" text="Medicine Name" />
+                        <TableColumn fx:id="medicineDosageTable" prefWidth="98.0" text="Dosage" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="38.0" layoutY="160.0" text="Prescription Name:" />
+                  <TextField fx:id="prescriptionName" layoutX="147.0" layoutY="156.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label layoutX="44.0" layoutY="558.0" prefHeight="17.0" prefWidth="88.0" text="Reason:">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="reason" layoutX="44.0" layoutY="592.0" prefHeight="104.0" prefWidth="285.0" />
+                  <TextField fx:id="Dosage" layoutX="157.0" layoutY="520.0" prefHeight="25.0" prefWidth="161.0" />
+                  <Label layoutX="37.0" layoutY="193.0" prefHeight="17.0" prefWidth="91.0" text="Medicine List:" />
+                  <Label layoutX="45.0" layoutY="488.0" text="Medicine Name:" />
+                  <Label layoutX="45.0" layoutY="524.0" prefHeight="17.0" prefWidth="74.0" text="Dosage:" />
+                  <ChoiceBox fx:id="medicineName" layoutX="157.0" layoutY="484.0" prefHeight="25.0" prefWidth="159.0" />
+                  <Button fx:id="addButton" layoutX="64.0" layoutY="450.0" mnemonicParsing="false" onAction="#addButton" prefHeight="25.0" prefWidth="102.0" text="Add" />
+                  <Button fx:id="deleteButton" layoutX="194.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="25.0" prefWidth="105.0" text="delete" />
+                  <Label fx:id="messageMedicine" layoutX="125.0" layoutY="193.0" prefHeight="17.0" prefWidth="181.0" textFill="#d81f1f" />
+                  <Label fx:id="checkP" layoutX="56.0" layoutY="707.0" prefHeight="57.0" prefWidth="262.0" textFill="#f01d1d">
+                     <font>
+                        <Font name="Arial Black" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
